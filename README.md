@@ -256,7 +256,7 @@ these — they're the parts most likely to come up:
 
 📧 rahulraj.rrj.official@gmail.com · 💻 [github.com/rahulraj-rrj](https://github.com/rahulraj-rrj) 
 
-*B.Tech Computer Science, Galgotias University — looking for backend /
+*B.Tech Computer Science, — looking for backend /
 full-stack opportunities where I can keep building things like this one.*
 
 </div>
