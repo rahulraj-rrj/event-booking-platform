@@ -1,0 +1,44 @@
+.booking-page {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.booking-status-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.booking-status-icon-confirmed {
+  background: var(--teal-soft);
+  color: var(--teal-bright);
+  animation: pulse-ring 2s var(--ease) infinite;
+}
+
+.booking-status-icon-pending {
+  background: var(--gold-soft);
+  color: var(--gold);
+}
+
+.booking-status-icon-cancelled {
+  background: var(--danger-soft);
+  color: var(--danger);
+}
+
+@keyframes pulse-ring {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(46, 179, 143, 0.25); }
+  50% { box-shadow: 0 0 0 10px rgba(46, 179, 143, 0); }
+}
+
+.booking-page-title {
+  font-size: 27px;
+  margin-bottom: 6px;
+}
+
+.booking-page-subtitle {
+  margin-bottom: 28px;
+}

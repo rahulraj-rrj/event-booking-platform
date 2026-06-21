@@ -1,0 +1,127 @@
+.navbar {
+  border-bottom: 1px solid transparent;
+  background: transparent;
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  transition: background 0.25s var(--ease), border-color 0.25s var(--ease), backdrop-filter 0.25s var(--ease);
+}
+
+.navbar-scrolled {
+  background: rgba(16, 15, 20, 0.78);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom-color: var(--border);
+}
+
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  height: 68px;
+}
+
+.navbar-brand {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 19px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  letter-spacing: -0.01em;
+}
+
+.navbar-brand-icon {
+  width: 18px;
+  height: 18px;
+  color: var(--gold);
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  flex: 1;
+}
+
+.navbar-links a {
+  font-size: 14px;
+  position: relative;
+}
+
+.navbar-links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 1.5px;
+  background: var(--gold);
+  transition: width 0.2s var(--ease);
+}
+
+.navbar-links a:hover::after {
+  width: 100%;
+}
+
+.navbar-link-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.navbar-auth {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navbar-user {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-right: 4px;
+}
+
+.navbar-burger {
+  display: none;
+  background: transparent;
+  border: none;
+  color: var(--text);
+  padding: 4px;
+}
+
+.navbar-mobile-menu {
+  display: none;
+}
+
+@media (max-width: 720px) {
+  .navbar-links,
+  .navbar-auth {
+    display: none;
+  }
+  .navbar-burger {
+    display: flex;
+    margin-left: auto;
+  }
+  .navbar-mobile-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 8px 24px 20px;
+    background: rgba(16, 15, 20, 0.96);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--border);
+    animation: slide-in 0.2s var(--ease);
+  }
+  .navbar-mobile-menu a {
+    padding: 12px 4px;
+    font-size: 15px;
+    border-bottom: 1px solid var(--border);
+  }
+  .navbar-mobile-auth {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 14px;
+  }
+}

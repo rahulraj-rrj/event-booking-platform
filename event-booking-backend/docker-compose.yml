@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: event-booking-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: yourpassword
+      MYSQL_DATABASE: event_booking
+    ports:
+      - "3306:3306"
+    volumes:
+      - event-booking-mysql-data:/var/lib/mysql
+
+volumes:
+  event-booking-mysql-data:

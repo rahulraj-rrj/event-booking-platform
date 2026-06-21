@@ -1,0 +1,128 @@
+.seat-map {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+}
+
+.seat-map-stage-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 28px;
+}
+
+.seat-map-stage {
+  width: 80%;
+  max-width: 360px;
+  height: 14px;
+  border-radius: 50% / 100%;
+  background: linear-gradient(180deg, var(--gold-soft), transparent);
+  border-top: 2px solid var(--gold);
+  position: relative;
+}
+
+.seat-map-stage-label {
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.3em;
+  color: var(--text-faint);
+  margin-top: 10px;
+}
+
+.seat-map-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 8px;
+}
+
+.seat-map-row-label {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-faint);
+  width: 18px;
+  flex-shrink: 0;
+}
+
+.seat-map-seats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.seat {
+  width: 30px;
+  height: 30px;
+  border-radius: 7px;
+  border: 1px solid var(--border);
+  background: var(--surface-raised);
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.12s var(--ease), border-color 0.15s var(--ease), background 0.15s var(--ease), box-shadow 0.15s var(--ease);
+}
+
+.seat-available {
+  border-color: var(--teal);
+  color: var(--teal-bright);
+}
+
+.seat-available:hover {
+  transform: scale(1.12);
+  background: var(--teal-soft);
+  box-shadow: 0 0 0 3px var(--teal-soft);
+}
+
+.seat-selected {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--gold-ink);
+  font-weight: 600;
+  transform: scale(1.08);
+  box-shadow: var(--shadow-gold);
+}
+
+.seat-locked {
+  border-color: var(--gold);
+  color: var(--gold);
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.seat-booked {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.seat-map-legend {
+  display: flex;
+  gap: 22px;
+  margin-top: 26px;
+  padding-top: 18px;
+  border-top: 1px dashed var(--border);
+  font-size: 12px;
+  color: var(--text-muted);
+  flex-wrap: wrap;
+}
+
+.seat-map-legend span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.seat-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.seat-dot-available { background: var(--teal-bright); }
+.seat-dot-selected { background: var(--gold); }
+.seat-dot-locked { background: var(--gold); opacity: 0.5; }
+.seat-dot-booked { background: var(--text-muted); opacity: 0.5; }

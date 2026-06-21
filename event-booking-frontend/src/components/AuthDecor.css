@@ -1,0 +1,64 @@
+.auth-decor {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mock-ticket {
+  display: flex;
+  background: var(--surface);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  width: 260px;
+}
+
+.mock-ticket-main {
+  flex: 1;
+  padding: 16px;
+}
+
+.mock-ticket-main svg {
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+
+.mock-ticket-line {
+  height: 8px;
+  border-radius: 4px;
+  background: var(--surface-raised);
+  margin-bottom: 8px;
+}
+
+.mock-ticket-line-lg {
+  width: 80%;
+}
+
+.mock-ticket-line-sm {
+  width: 50%;
+}
+
+.mock-ticket-chips {
+  display: flex;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.mock-ticket-chips span {
+  width: 26px;
+  height: 16px;
+  border-radius: 4px;
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+}
+
+.mock-ticket-divider {
+  width: 0;
+  border-left: 2px dashed var(--border-strong);
+}
+
+.mock-ticket-stub {
+  width: 44px;
+  background: var(--surface-raised);
+}
