@@ -1,6 +1,9 @@
 <div align="center">
 
 # 🎟️ Encore
+<p align="center">
+  <img src="event-booking-frontend/public/banner.png" alt="Encore Image" width="100%" style="border-radius: 8px; border: 1px solid #13192b; box-shadow: 0 0 20px rgba(0, 240, 255, 0.15);" />
+</p>
 ### A concurrency-safe event ticket booking platform
 
 **Two people click "Reserve" on the same seat in the same millisecond.
